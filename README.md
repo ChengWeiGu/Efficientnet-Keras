@@ -25,5 +25,5 @@ command: python EfficientnetB5 -t
 The script is revised to fit my requirement, the original script can be sourced to:  
 https://www.kaggle.com/ateplyuk/mnist-efficientnet/  
 
-You can paraphrase it if needed!
+You can paraphrase it if needed.
 
