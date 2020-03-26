@@ -11,7 +11,7 @@ It will generate three files including "filenames.csv", "datasets.pkl" and "data
 
 
 ## Run the model:
-Please run the script "ENetB5.py" after finishing data preprocess.  
+Please run the script "EfficientnetB5.py" after finishing data preprocess.  
 Note that the "datasets_split.pkl" is needed
 
 
