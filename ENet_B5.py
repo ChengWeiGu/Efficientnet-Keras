@@ -62,7 +62,7 @@ def load_data(dataset_dst):
         return pickle.load(the_file)
         the_file.close()
 
-dataset_dst = r"C:\Users\Tina_VI01\Desktop\David\rainbow\dataset\test9_5cls_new\datasets_split.pkl"
+dataset_dst = r".\datasets_split.pkl"
 
 (x_train,y_train),(x_test,y_test) = load_data(dataset_dst)
 print("x_train.shape = {}".format(x_train.shape))
@@ -119,9 +119,9 @@ model_f = Model(input = model.input, output = predictions)
 model_f.compile(optimizers.Adam(lr=0.0001, beta_1=0.9, beta_2=0.999, epsilon=1e-08), loss='categorical_crossentropy', metrics=[metrics.mae, metrics.categorical_accuracy])
 # model_f.compile(optimizers.rmsprop(lr=0.0001, decay=1e-6), loss='categorical_crossentropy', metrics=[metrics.categorical_accuracy])
 
-
-model_f.load_weights(r"C:\Users\Tina_VI01\Desktop\David\rainbow\B5\test9_res\80 epochs\ENetB5_5cls.h5") #3/11新增
-print("> load previous weights successfully...")
+#reload the weight if needed
+#model_f.load_weights(r".\ENetB5_5cls.h5")
+#print("> load previous weights successfully...")
 #------------------------------------end of building model-----------------------------#
 
 
@@ -143,8 +143,8 @@ if __name__ == '__main__':
     # plot_model(model_f, to_file='ENetB0.png', show_shapes=True)
     
     #----------------fitting params control------------------#
-    epochs = 40
-    batch_size = 6
+    epochs = 80
+    batch_size = 2
     validation_split=0.1
     shuffle=True
     verbose=1
