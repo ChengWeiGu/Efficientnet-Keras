@@ -78,7 +78,7 @@ class AutoData:
 
 if __name__ == "__main__":
 
-    src = r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test11\Train"
+    src = r".\dataset\"
     AD = AutoData(src)
     AD.im2pickle(test_size = 0.2)
     
