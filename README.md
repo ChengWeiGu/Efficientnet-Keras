@@ -6,11 +6,11 @@ https://github.com/qubvel/efficientnet
 
 
 ## Run data Preprocess:
-Please use the script "Train_Test_Prep_forColor.py" to picke the image data in dataset.  
+Please use the script "Train_Test_Prep_forColor.py" to pickle the image data in dataset.  
 It will generate three files including "filenames.csv", "datasets.pkl" and "datasets_split.pkl".
 
 
 ## Run the model:
 Please run the script "ENetB5.py" after finishing data preprocess.  
-the "datasets_split.pkl" is needed
+Note that the "datasets_split.pkl" is needed
 
