@@ -14,6 +14,7 @@ It will generate three files including "filenames.csv", "datasets.pkl" and "data
 Please run the script "EfficientnetB5.py" after finishing data preprocess.  
 Note that the "datasets_split.pkl" is needed
 
+command: python EfficientnetB5 -t
 
 ## Reference:
 The script is revised to fit my requirement, the original script can be sourced to:  
