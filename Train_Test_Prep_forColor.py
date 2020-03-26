@@ -48,7 +48,6 @@ class AutoData:
             for p in df_file['filenames'].values:
                 imag = cv2.imread(p)
                 imag = cv2.cvtColor(imag, cv2.COLOR_BGR2GRAY)
-                # imag = imp.resize(imag,self.imag_size,self.imag_size) #壓縮圖片 2/5 新增
                 data += [list(imag.ravel())]
             #壓縮全部數據並儲存
             data_all = (np.array(data), df_file['label'].values) 
