@@ -20,7 +20,7 @@ It will generate three files including "filenames.csv", "datasets.pkl" and "data
 ## Run the model:
 Please run the script "Efficientnet_Ver1.py" after finishing data preprocess. ("datasets_split.pkl" is needed)  
 
-command: python EfficientnetB5 -t  
+command: python Efficientnet_Ver1 -t  
 
 => For several .pkl files, you need to use the other script Version3\efficientnet_gen_Ver3.py  
 to run through all data files by the following command:  
