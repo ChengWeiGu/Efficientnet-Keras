@@ -16,12 +16,16 @@ def save_data(dataset_dst,data):
         the_file.close()
 
 
-path = r"C:\Users\David2_Gu\Desktop\ASUS_David.Gu\Project\EfficientNet\model\dataset_split_lcd.pkl"
+path = r".\dataset_split_pcb.pkl"
 
 (x_train,y_train),(x_test,y_test) = load_data(path)
-n_cut = 3
+n_cut = 16
 L_train = x_train.shape[0]
 L_test = x_test.shape[0]
+
+print("the total training data = {} ".format(L_train))
+print("the total testing data = {} ".format(L_test))
+
 interval_train = math.ceil(L_train/n_cut)
 interval_test = math.ceil(L_test/n_cut)
 
