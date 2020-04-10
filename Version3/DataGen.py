@@ -19,7 +19,7 @@ def load_data(dataset_src):
         the_file.close()
 
 
-def train_batch_generator(data_dir = './data4/'):
+def train_batch_generator(data_dir = './data/'):
     data_basename = listdir(data_dir)
     Train_basename = [name for name in data_basename if (name.startswith('Train'))]
     Test_basename = [name for name in data_basename if (name.startswith('Test')) ]
