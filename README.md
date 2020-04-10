@@ -14,7 +14,7 @@ my envs:
 Please use the script "Train_Test_Prep_forColor.py" to pickle the image data in dataset.  
 It will generate three files including "filenames.csv", "datasets.pkl" and "datasets_split.pkl".  
 
-=> Note that if your data size is too large under the limit of memroy, we can use the script Version3\split_pkl.py   
+=> Note that if your data size is too large under the limit of memroy, you can use the script Version3\split_pkl.py   
 to splits the data into several .pkl files.
 
 
