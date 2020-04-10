@@ -61,7 +61,7 @@ class connector_Img2pkl:
 
 
 def main1():
-    root1 = r"D:\Side Work Data\Connector Data(Kelvin)\20200327\argment"
+    root1 = r"D:\Side Work Data\Connector Data\20200327\argment"
     img_size1 = 224
     tool1 = connector_Img2pkl(root1,img_size1)
     tool1.SET_CLASS_LIST()
