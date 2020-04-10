@@ -11,15 +11,14 @@ my envs:
 4.cudnn7.6.5
 
 ## Run data Preprocess:
-Please use the script "Train_Test_Prep_forColor.py" to pickle the image data in dataset.  
+Please use the script "im2pkl_Ver1.py" to pickle the image data in dataset.  
 It will generate three files including "filenames.csv", "datasets.pkl" and "datasets_split.pkl".  
 
-=> Note that if your data size is too large under the limit of memroy, you can use the script Version3\split_pkl.py   
-to splits the data into several .pkl files.
+=> Note that if your data size is too large under the limit of memroy, you can use the script Version3\split_pkl.py to splits the data into several .pkl files.
 
 
 ## Run the model:
-Please run the script "EfficientnetB5.py" after finishing data preprocess. ("datasets_split.pkl" is needed)  
+Please run the script "Efficientnet_Ver1.py" after finishing data preprocess. ("datasets_split.pkl" is needed)  
 
 command: python EfficientnetB5 -t  
 
