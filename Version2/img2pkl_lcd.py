@@ -114,10 +114,10 @@ class lcd_Img2pkl:
 
 #step1: random rotation
 def main1():
-    srcs = [r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\0",
-            r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\1"]
-    dsts = [r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\Train\0",
-            r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\Train\1"]
+    srcs = [r".\0",
+            r".\1"]
+    dsts = [r".\Train\0",
+            r".\Train\1"]
     
     for src, dst in zip(srcs,dsts):
         files = listdir(src)
@@ -129,10 +129,10 @@ def main1():
 
 #step2: 90 degrees of rotation and left-right flip
 def main2():
-    srcs = [r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\0",
-            r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\1"]
-    dsts = [r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\Train\0",
-            r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\Train\1"]
+    srcs = [r".\0",
+            r".\1"]
+    dsts = [r".\Train\0",
+            r".\Train\1"]
     
     for src, dst in zip(srcs,dsts):
         files = listdir(src)
@@ -143,7 +143,7 @@ def main2():
 
 
 def main3():
-    root1 = r"D:\Side Work Data\LCD photos\3rd photo test\New Classes\All Test\test12_two_cls\Train"
+    root1 = r".\Train"
     img_size1 = 160
     tool1 = lcd_Img2pkl(root1,img_size1)
     tool1.SET_CLASS_LIST()
@@ -155,6 +155,6 @@ def main3():
 
 
 if __name__ == "__main__":
-    # main1()
-    # main2()
+    main1()
+    main2()
     main3()
