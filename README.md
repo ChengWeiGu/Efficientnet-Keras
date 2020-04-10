@@ -19,19 +19,20 @@ to splits the data into several .pkl files.
 
 
 ## Run the model:
-Please run the script "EfficientnetB5.py" after finishing data preprocess.  
-Note that the "datasets_split.pkl" is needed
+Please run the script "EfficientnetB5.py" after finishing data preprocess. ("datasets_split.pkl" is needed)  
 
 command: python EfficientnetB5 -t  
 
 => For several .pkl files, you need to use the other script Version3\efficientnet_gen_Ver3.py  
 to run through all data files by the following command:  
 
+
 python efficientnet_gen_Ver3.py \  
 --train \    
 --model_size="B0 or B3 or ...." \  
 --imag_size=your_imag_size \  
 --num_cls=your_class_numbers  
+
 
 
 ## Reference:
